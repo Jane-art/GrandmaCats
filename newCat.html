@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавляем котика</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+    <header class="container">
+        <img class="logo-img" src="img/cat-fill.svg" alt="Бабуленькины котики">
+        <span><a href="/"><button class = "button"><img class = "button" src="https://st4.depositphotos.com/18672748/21458/v/600/depositphotos_214583656-stock-illustration-pet-vector-icon-isolated-on.jpg">Назад</button></a></span>
+        <span class="logo-text">Бабуленькины котики</span>
+    </header>
+    <main>
+        <div class="postAdding">
+            <div class>
+                <img class="postAdding_img" id = "postAdding_img" src="https://ilike.pet/upload/iblock/786/786fc0798233006257d41dc0132f6387.jpg">
+            </div>
+            <div class="postAdding_body">
+                <input class ="create" id = "createUrl" onchange="editor()" type="text" placeholder="URl">
+                <input class ="create" id = "createName"type="text" placeholder="Имя">
+                <input class ="create" id = "createDesc"type="text" placeholder="Описание">
+                <input class ="create" id = "createAge"type="text" placeholder="Возраст">
+
+                <div class ="create createButton" onclick="sendInput()" type="">Создать</div>
+                <div class ="create createButton" onclick="cancelInput()" type="">Отмена</div>
+            </div>
+        </div>
+        <!-- <div class="info-close" onclick="closeInfo()"></div> -->
+    </main>
+
+    <footer class="container">©2022 All rights reserved</footer>
+    <div class="info-block">
+        <div class="info-wrapper">
+
+        </div>
+    </div>
+
+    <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
+    <script src="catsAdder.js"></script>
+</body>
+</html>

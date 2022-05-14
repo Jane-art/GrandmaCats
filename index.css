@@ -1,0 +1,98 @@
+header{
+    height: 100px;
+}
+
+.container_header{
+    background-color: rgb(123, 141, 156);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-height: 50px;
+}
+.card {
+    width: 300px;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 0 #0006;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+.card-img {
+    height: 150px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .7;
+}
+p {
+    margin: 0;
+    padding:20px ;
+}
+.card>header {
+    padding: 20px;
+    box-shadow: 0 0 5px 0 #222;
+    font-weight:bold ;
+}
+.card>footer {
+    background-color: #222;
+    color:white;
+    padding: 10px 20px;
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap:40px ;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.container_footer{
+    background-color: rgb(123, 141, 156);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-height: 50px;
+}
+.info-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        gap: 0 50px;
+        background-color: #fff;
+        padding: 30px;
+        border: 1px solid;
+        border-radius: 10px;
+        position: relative;
+        max-width: 1000px;
+}
+.info-img {
+        width: 100%;
+}
+.information h2 {
+        font-family: "Comic Sans MS", sans-serif;
+        margin-bottom: 30px;
+}
+.info-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        background-image: url(img/close.png);
+        background-position: center 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+}
+.logoText{
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 20px;
+}
